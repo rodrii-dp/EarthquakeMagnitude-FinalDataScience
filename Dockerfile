@@ -5,4 +5,4 @@ COPY . .
 RUN pip install --no-cache-dir gradio
 EXPOSE 7860
 ENV GRADIO_SERVER_NAME="0.0.0.0"
-CMD ["python", "app.py"]
+CMD ["python", "/usr/src/app/interface/gradio.py"]
