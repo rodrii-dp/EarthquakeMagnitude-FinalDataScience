@@ -1,7 +1,7 @@
 FROM python:3.11-slim
 
 WORKDIR usr/src/app
-COPY . .
+COPY .. .
 RUN mkdir -p results
 RUN pip install --no-cache-dir gradio pycaret seaborn matplotlib numpy pandas sweetviz scikit-learn openpyxl requests
 EXPOSE 7860
